@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>GF63 Thin</title>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            max-width: 800px;
+            padding: 20px;
+            background-color: black;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .head {
+            font-family: 'Open Sans', arial, sans-serif;
+            font-size: 28px;
+            line-height: 1.1em;
+            margin: 0;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .head-2 {
+            font-family: 'Open Sans', arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.1em;
+            margin: 0;
+            color: white;
+        }
+
+        .head-2 b {
+            font-family: 'Open Sans', arial, sans-serif;
+            font-size: 36px;
+            line-height: 1.1em;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .description {
+            font-family: 'Open Sans', arial, sans-serif;
+            font-size: 16px;
+            margin: 0;
+            color: white;
+        }
+
+        td .gray {
+            padding-top: 10px;
+            padding-left: 10px;
+            background-color: #3c3c3c;
+        }
+
+        .list-right,
+        .list-left {
+            font-family: 'Open Sans', arial, sans-serif;
+            font-size: 11px;
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+        .paragraph-center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .number-right {
+            padding: 6px;
+            border: 1px solid #e50014;
+            border-radius: 4px;
+            background: #e50014;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .specs-right {
+            border-collapse: separate;
+            border-spacing: 5px 10px;
+        }
+
+        .w-14-px {
+            width: 14px;
+        }
+
+        /* Table/tbody/tr/td/img percentage width */
+
+        .w-p-100 {
+            width: 100%;
+        }
+
+        .w-p-60 {
+            width: 60%;
+        }
+
+        .w-p-50 {
+            width: 50%;
+        }
+
+        .w-p-15 {
+            width: 15%;
+        }
+
+
+        .w-p-20 {
+            width: 20%;
+        }
+
+        .w-p-35 {
+            width: 35%;
+        }
+
+        .w-p-33 {
+            width: 33.33%;
+        }
+
+        /* Table Cellspacing */
+
+        .cs-10 {
+            border-spacing: 10px;
+        }
+
+        /* height */
+
+        .h-15 {
+            height: 15px;
+        }
+
+        .h-60 {
+            height: 60px;
+        }
+
+        /* Align + Valign center */
+
+        .a-center {
+            text-align: center;
+        }
+
+        .va-bottom {
+            vertical-align: bottom;
+        }
+
+        .va-top {
+            vertical-align: top;
+        }
+
+        /* Alignment columns */
+
+        .f-left {
+            float: left;
+        }
+
+        .f-right {
+            float: right;
+        }
+
+        table td {
+            border-collapse: collapse;
+            border: 0;
+            border-spacing: 0;
+        }
+
+        td .gray {
+            background-color: #3c3c3c;
+        }
+
+        /* image */
+
+        .overview img {
+            width: 100%
+        }
+
+        .intel-core img {
+            width: 100%;
+        }
+
+        .gtx1060 img {
+            width: 100%;
+        }
+
+        .thin-bezelimg {
+            width: 100%;
+        }
+
+        .coolerboost5 img {
+            width: 100%
+        }
+
+        .coolerboost5-logo img {
+            width: 30%;
+        }
+
+        .steelseries-logo img {
+            width: 100%
+        }
+
+        .rgb img {
+            width: 100%;
+        }
+
+        .w-20 img {
+            width: 20%;
+        }
+
+        .w-15 img {
+            width: 15%;
+        }
+
+        .giantspeaker img {
+            width: 100%;
+        }
+
+        /* text */
+
+        .head {
+            font-size: 28px;
+            font-family: 'Open Sans', arial, sans-serif;
+            line-height: 32px;
+        }
+
+        .head-2 {
+            font-size: 18px;
+            color: white;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            line-height: 26px;
+        }
+
+        .description {
+            padding-bottom: 10px;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: left;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            line-height: 26px;
+        }
+
+        .description-c {
+            padding-bottom: 10px;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            line-height: 22px;
+            color: #666;
+        }
+
+        /** MAX W-640 **/
+
+        @media only screen and (max-width: 640px) {
+            table .full-width {
+                width: 100%;
+                max-width: 100%;
+                min-width: 100%;
+                clear: both;
+            }
+
+            td .full-width {
+                width: 100%;
+                max-width: 100%;
+                min-width: 100%;
+                clear: both;
+            }
+
+            td .list-left {
+                width: 30%;
+            }
+
+            td .list-right {
+                width: 66%;
+            }
+
+            td .overview {
+                text-align: center;
+            }
+
+            td .cpu-boost-socket {
+                width: 48%;
+            }
+
+            td .cpu-boost-button {
+                width: 48%;
+            }
+
+            table.m2-shield table.specs-right {
+                width: 50%;
+                float: right;
+            }
+
+            td .vr-logos {
+                width: 280px;
+            }
+
+            table .ddr4-boost {
+                width: 100%;
+            }
+
+            /* text */
+            .head {
+                font-size: 24px;
+                font-weight: bold;
+                font-family: 'Open Sans', arial, sans-serif;
+            }
+
+            .head-2 {
+                font-size: 18px;
+                font-weight: bold;
+                font-family: 'Open Sans', arial, sans-serif;
+            }
+
+            .description {
+                padding-bottom: 20px;
+            }
+
+            table.oc .description {
+                padding-bottom: 8px;
+            }
+
+            /* image */
+            .overview img {
+                width: 258px;
+            }
+
+            .printing-screws img {
+                width: 100%;
+            }
+
+            .oc-loadline-calibration img {
+                width: 70%;
+            }
+
+            .world-logo img {
+                width: 100%;
+            }
+        }
+
+        /** MAX W-479 **/
+
+        @media only screen and (max-width: 479px) {
+
+            /* mobile setting */
+            .head {
+                font-size: 24px;
+                font-family: 'Open Sans', arial, sans-serif;
+            }
+
+            table .full-width {
+                width: 100%;
+                max-width: 100%;
+                min-width: 124px;
+                clear: both;
+            }
+
+            td .list-left {
+                width: 100%;
+                max-width: 100%;
+                min-width: 124px;
+                clear: both;
+            }
+
+            td .list-right {
+                width: 100%;
+                max-width: 100%;
+                min-width: 124px;
+                clear: both;
+            }
+
+            td .overview {
+                text-align: left;
+            }
+
+            td .full-width {
+                width: 100%;
+                max-width: 100%;
+                min-width: 100%;
+                clear: both;
+            }
+
+            td .printing-screws {
+                width: 100%;
+                text-align: center;
+            }
+
+            td .printing-parts {
+                width: 100%;
+                max-width: 100%;
+                min-width: 100%;
+                clear: both;
+                margin-top: 10px;
+            }
+
+            table.m2-shield table.specs-right {
+                width: 100%;
+                float: none;
+                padding-left: 8%;
+            }
+
+            /* text */
+            table.printing .description {
+                padding-bottom: 0;
+            }
+
+            /* image */
+            .printing-screws img {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- BOARD OVERVIEW -->
+    <!-- KV -->
+    <table class="w-p-100">
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+
+                    <tr>
+                        <td class="intel-core va-bottom w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="intel-core va-bottom w-p-100 full-width a-center"><img
+                                                src="images/GF63-Thin-KV.jpg" class="w-p-100" alt="MSI GF63 Thin">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- End  KV -->
+    <!--10th Gen Gaming-->
+    <table class="w-p-100">
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="description">Този, който умее най-добре да се адаптира към промените, е този, който оцелява и
+                            еволюира. Избери Духа на дракона и еволюирай
+                            с най-новите гейминг лаптопи на MSI, въорежени с 10-то поколение Intel<sup>®</sup>
+                            Core<sup>™</sup> i7 процесори (Comet Lake
+                            H) &amp; най-новата графична карта GeForce<sup>®</sup>&nbsp;GTX, проектирана за геймъри със стил. Пристъпи 
+                            първи към Новото
+                            поколение.</td>
+                    </tr>
+                    <tr>
+                        <td class="va-bottom w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="va-bottom w-p-100 full-width a-center"><img
+                                                src="images/kv-banner.jpg" class="w-p-100" alt="MSI 10th Gen Gaming">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!--end 10th Gen Gaming-->
+
+    <!-- Intel Performance-->
+    <table class="w-p-100">
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="w-15"><img src="images/icon-intel-i7-10th.jpg" alt="intel i7 10th logo" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">ПРЕДЕФИНИРАНА КОМПЮТЪРНА МОЩ</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Новото 10-то поколение Intel<sup>®</sup> Core™ i7 процесори осигурява
+                            до
+                            15%
+                            повече производителност в сравнение с предходната генерация. По-високата честота при работа на едно ядро е по-добра за 
+                            игровото преживяване.</td>
+                    </tr>
+                    <tr>
+                        <td class="w-p-100">
+                            <table class="w-p-33 full-width f-left ">
+                                <tbody>
+                                    <tr>
+                                        <td class="head-2"><b>6</b> ядра<br></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="w-p-60 full-width f-left">
+                                <tbody>
+                                    <tr>
+                                        <td class="head-2">
+                                            <img src="images/intel-boost-icon.png" alt="Stunning Outperform">
+                                            До <b class="head-2">5.0 GHz</b> Single core Turbo
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="w-p-100 full-width f-left">
+                                <tbody>
+                                    <tr>
+                                        <td class="head-2">
+                                            <img src="images/intel-boost-icon.png" alt="Stunning Outperform">
+                                            До <b class="head-2">15</b> % по-висока производителност
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-p-100 full-width a-center"><img
+                                                src="images/intel-ci7-10thgen_6cores.jpg" class="w-p-100"
+                                                alt="intel core i7 10th"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End Intel Performance -->
+
+    <!-- NVIDIA 1650 TI-->
+    <table class="w-p-100">
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="w-20"><img src="images/icon-nv-gtx.png" alt="NVIDIA RTX logo" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">ЕЛЕГАНТНОСТ, СЪЗДАДЕНА ЗА ПОБЕДА</td>
+                    </tr>
+                    <tr>
+                        <td class="description">NVIDIA Max-Q е иновативен подход при изработката на най-тънките,
+                            най-бързите, най-тихите гейминг лаптопи в света. Тя е пресечната точка на върховния GeForce гейминг и
+                            невъзможно тънкия дизайн. Най-накрая има гейминг лаптоп, който можеш да сложиш в скута си.</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="h-15"></tr>
+        <tr>
+            <td class="w-p-100 full-width">
+                <table class="w-p-100">
+                    <tbody>
+                        <tr>
+                            <td class="w-p-100">
+                                <table class="w-p-50 full-width f-left ">
+                                    <tbody>
+                                        <tr>
+                                            <td class="w-p-33 w-p-100 description a-center gray">3DMark Time Spy
+                                                Benchmark (DX12)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="steelseries-logo"><img src="images/GF-Performance.jpg"
+                                                    alt="Performance">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="w-p-50 full-width f-left">
+                                    <tbody>
+                                        <tr>
+                                            <td class="steelseries-logo"><img src="images/GF63-nv-gtx-1650.jpg"
+                                                    alt="GF63">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="description-c">
+                                *Производителността може да се различава според системната конфигурация и игровите настройки.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <tr class="h-60"></tr>
+    </table>
+    <!--End NVIDIA 1650 TI -->
+
+    <!-- ID-->
+    <table class="w-p-100">
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">ДОБРЕ ОХЛАДЕН И ТИХ ДОРИ ПРИ ГОЛЯМО НАТОВАРВАНЕ</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Прецизно настроен, за да бъде забележимо по-тих и по-хладен, когато е под голямо натоварване, лесно
+                            приспособим към всякаква среда.</td>
+                    </tr>
+                    <tr>
+                        <td class="h-15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-p-100">
+                            <table class="w-p-50 full-width f-left ">
+                                <tbody>
+                                    <tr>
+                                        <td class="steelseries-logo"><img src="images/GF63-Thin-ID.jpg"
+                                                alt="GF63-Thin-ID">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="w-p-50 full-width f-left">
+                                <tbody>
+                                    <tr>
+                                        <td class="steelseries-logo"><img src="images/info_GF63.png" alt="GF63 Cooler">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-p-33 w-p-100 description a-center">Измерено при максимална мощност на CPU+GPU
+                                            без защитно понижаване на работните честоти.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="description-c">
+                            * По-ниско е по-добре. Резултатът може да се различава в зависимост от конфигурацията и околната среда.
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End ID -->
+
+    <!-- 144HZ -->
+    <table class="w-p-100">
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="w-15"><img src="images/144HZ.png" alt="144HZ logo" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">144HZ IPS КЛАС ГЕЙМИНГ ДИСПЛЕЙ С ТЪНКА РАМКА
+                            НЕПОВТОРИМА СКОРОСТ И ЯСНОТА</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Най-бързият гейминг дисплей ти дава най-живата картина, за да
+                            не пропуснеш нищо от действието.</td>
+                    </tr>
+                    <tr>
+                        <td class="w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-p-100 full-width a-center"><img src="images/144hz-GF63.jpg"
+                                                class="w-p-100" alt="GF63 144HZ"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="description-c">
+                            * Опционално. Може да се различава според SKU и държавата.
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End 144HZ -->
+
+    <!-- THIN & LIGHT-->
+    <table class="w-p-100">
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">ТЪНКА И ЛЕКА ПОЛИРАНА АЛУМИНИЕВА ЕСТЕТИКА</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Метално покритие на капака и клавиатурата в съчетание с уникалната
+                           вентилация във формата на X, скрита вътре.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="w-p-100">
+                            <table class="w-p-50 full-width f-left">
+                                <tbody>
+                                    <tr>
+                                        <td class="head-2"><img src="images/intel-boost-icon.png"
+                                                alt="Stunning Outperform"><b>1,86</b> кг 
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="w-p-50 full-width f-left">
+                                <tbody>
+                                    <tr>
+                                        <td class="head-2">
+                                            <img src="images/intel-boost-icon.png" alt="Stunning Outperform"> <b
+                                                class="head-2">21,7</b> мм тънък
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-p-100 full-width a-center"><img src="images/THIN-LIGHT-GF63.jpg"
+                                                class="w-p-100" alt="THIN LIGHT GF63"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End THIN & LIGHT -->
+
+    <!-- battery-->
+    <table class="w-p-100">
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="w-20"><img src="images/icon-7hr-plus.png" alt="7+ battery logo" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">7 ЧАСА ЖИВОТ НА БАТЕРИЯТА</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Напълно зареден за автономна продуктивност и забавление.<br>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-p-100 full-width a-center"><img src="images/battery.jpg"
+                                                class="w-p-100" alt="7+battery"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="description-c">* Тестван от MobileMark<sup>®</sup> 2014 стандарт. Животът на батерията
+                                ще се различава според спецификациите и системната конфигурация.
+                            </P>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End battery -->
+
+    <!-- High-Res-->
+    <table class="w-p-100">
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="w-15"><img src="images/High-Res.png" alt="High-Res logo" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">НАЧИНЪТ, ПО КОЙТО ТРЯБВА ДА ЗВУЧИ МУЗИКАТА</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Потопи се изцяло в музика без загуби и се наслаждавай на първокласното качество на звука
+                            с Hi-Resolution Audio. Преживей и чувай звука такъв, какъвто трябва да бъде.<br>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-p-100 full-width a-center"><img src="images/High-Res.jpg"
+                                                class="w-p-100" alt="High-Res"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End High-Res -->
+
+    <!-- Nahimic 3 -->
+    <table class="w-p-100">
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="w-15"><img src="images/Nahimic-3.png" alt="Nahimic 3  logo" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">ИЗЦЯЛО НОВО NAHIMIC 3 ПОТАПЯНЕ В ЗВУК ОТ СЛЕДВАЩО ПОКОЛЕНИЕ</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Усъвършенствай 3D съраунд звука от играта и поеми контрол над музиката, 
+						филмите и конферентните си разговори.
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-p-100 full-width a-center"><img src="images/Nahimic-3.jpg"
+                                                class="w-p-100" alt="Nahimic 3"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="description-c">* Използвай слушалките си и преживей аудиото с и без
+                                Nahimic.
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End Nahimic 3 -->
+
+    <!-- Dragon Center-->
+    <table class="w-p-100">
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="w-15"><img src="images/control-dc-logo.png" alt="Dragon Center logo" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">БЕЗПЛАТЕН БЪФ ЗА ТВОЯТА ПЛАТФОРМА</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Ексклузивният софтуер на MSI Dragon Center ти помага да управляваш и персонализираш 
+                            своя MSI лаптоп както сам прецениш. Наблюдавай, настройвай
+                            и оптимизирай лесно чрез една обединена система.
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-p-100 full-width a-center"><img
+                                                src="images/Dragon-Center-noTrueColor.jpg" class="w-p-100"
+                                                alt="Dragon Cente">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="description-c">* Интерфейсът и функционалността може да се различават поради промени на версията.
+                                Моля, свали най-новия Dragon Center от официалната страница на MSI.
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End Dragon Center -->
+
+    <!-- MSI APP PLAYER -->
+    <table class="w-p-100">
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="w-15"><img src="images/MSI_APP_Player.png" alt="MSI APP PLAYER logo" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">MSI APP PLAYER</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Разработен в изключително сътрудничество с BlueStacks, MSI APP
+                            Player осигурява безпроблемно гейминг преживяване между
+                            мобилен гейминг и PC платформата. Той дава възможност на геймърите да използват персонализирани функции, като
+                            RGB подсветка на клавиатурата,
+                            по-добри графики и многозадачност.
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-p-100 full-width a-center"><img
+                                                src="images/MSI-APP-PLAYER-GF63.jpg" class="w-p-100"
+                                                alt="MSI-APP-PLAYER GF63"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="description-c">* Функцията за подсветка на бързите клавиши се поддържа само при модели с опция Per-Key RGB.
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End MSI APP PLAYER -->
+
+    <!-- ESL Pro League Partnership -->
+    <table class="w-p-100">
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="w-20"><img src="images/msi_official_gaming_partner_logo.png"
+                                    alt="ESL Pro League Partnership logo" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="w-p-100">
+                <table class="w-p-100">
+                    <tr>
+                        <td class="head">“ДЪЛГОГОДИШНОТО НИ ПАРТНЬОРСТВО С MSI ПОЗВОЛИ НА ИГРАЧИТЕ И ФЕНОВЕТЕ НА ESL ТУРНИРИТЕ ДА ПРЕЖИВЕЯТ ЕЛЕКТРОННИТЕ СПОРТОВЕ ПО НЕПОВТОРИМ НАЧИН.”</td>
+                    </tr>
+                    <tr>
+                        <td class="description">- Paul Brewer, SVP Brand Partnerships, ESL.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="w-p-100 full-width a-center">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="w-p-100 full-width a-center"><img
+                                                src="images/ESL_Pro_League_Partnership.jpg" class="w-p-100"
+                                                alt="ESL Pro League Partnership"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="h-60">
+            </td>
+        </tr>
+    </table>
+    <!-- End ESL Pro League Partnership -->
+
+
+    <!-- ***END OF CONTENT*** -->
+</body>
+
+</html>
